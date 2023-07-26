@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 2 - MD5 Hash of Image</title>
+</head>
+<body>
+    <h1>MD5 Hash of Image</h1>
+    <form action="/md5_hash" method="post" enctype="multipart/form-data">
+        <label for="image-input">Select an image:</label>
+        <input type="file" name="file" id="image-input">
+        <br /><br />
+        <input type="submit" value="Generate MD5 Hash">
+    </form>
+
+    <div id="result-container">
+        {% if md5_hash is defined %}
+            <p>MD5 Hash: {{ md5_hash }}</p>
+        {% endif %}
+        {% if error is defined %}
+            <p style="color: red;">Error: {{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
