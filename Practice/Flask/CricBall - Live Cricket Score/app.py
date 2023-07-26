@@ -29,7 +29,6 @@ def cricket():
             team2_name = team2_block.find('div', class_='scr_tm-nm').text
             team2_score = team2_block.find('span', class_='scr_tm-run').text
 
-            # Check if any of the required details is missing for the current section
             if not (description and location and title and current and link and status and team1_name and team1_score and team2_name and team2_score):
                 raise ValueError("Data not available for this section")
 
