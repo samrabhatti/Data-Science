@@ -1,0 +1,19 @@
+.body {
+    background-image: url("https://aucklandcricket.co.nz/wp-content/uploads/2018/10/28-ebc-cricket21.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container {
+    padding-top: 50px;
+}
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e7e5e5;
+    margin-bottom: 20px;
+    height: 450px;
+}
+.card-body {
+    text-align: center;
+}
